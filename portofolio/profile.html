@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/style.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="../img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/icons/favicon-16x16.png">
+  <link rel="manifest" href="../img/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>IBagasK</title>
+
+</head>
+
+<body>
+  <div class="div">
+    <h1 class="rainbow-text">Ignatius Bagas Kurniawan</h1>
+    <div class="p">
+      <strong>εὔνοιᾰ • (eúnoia)</strong> <br>
+      'A well mind; beautiful thinking'
+    </div>
+  </div>
+  <hr />
+  <div class="image-container">
+    <img id="myImg" src="../img/bg3.jpg" width="800" height="1000" class="cover parallax" data-paralax-depth="2"
+      style="cursor: pointer;" title="Klik aku!">
+  </div>
+  <hr />
+  <div class="bg parallax">
+    <div class="textbox">
+      <h2 class="htbox">Siapa Bagas?</h2>
+      <p>Hai! Nama saya Ignatius Bagas Kurniawan.
+        lahir pada 17 januari 1999 dikota madiun dan
+        saya merupakan generasi yang memiliki potensi untuk
+        berkembang dengan cepat. Senang membaca novel dan juga
+        belajar berbagai macam hal mulai dari editing video,programming,editing foto,dan lain sebagainya.
+        Atas seluruh ilmu yang saya miliki, saya mempunyai keahlian dalam
+        mengembangkan dan membuat produk
+        terbaik.
+      </p>
+      <p>Saya berspesialis dalam bidang
+        web development,juga graphic designing dan
+        juga video editing. Pada web development,
+        saya sering menggunakan Bahasa
+        <strong> PHP </strong> untuk back-end dan
+        <strong>HTML,CSS,SCSS dan Javascript </strong> untuk front-end.
+        Pada Video editing dan juga Graphic designing saya terbiasa
+        menggunakan software keluaran Adobe. Mulai dari<strong> Adobe Aftereffects,Photoshop,Illustrator,dan juga Adobe
+          XD</strong>.
+      </p>
+    </div>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+</body>
+
+<footer id="footer">
+  <hr />
+  <div class="container">
+    <!-- Row -->
+    <div class="row">
+      <div class="col-md-12">
+        <!-- footer follow -->
+        <ul class="footer-follow">
+          <li><a href="https://www.instagram.com/bagggas/?hl=id"><i class="fa fa-instagram"
+                title="Kepoin bagas!"></i></a></li>
+          <li><a href="https://github.com/Bagggas"><i class="fa fa-github"></i></a></li>
+          <li><a href="mailto:abbbagas@gmail.com"><i class="fa fa-envelope" title="Email aku"></i></a></li>
+          <li><a href="../cv/Resume Bagas.pdf" download="Resume Bagas.pdf"><i class="fa fa-download"
+                title="Download Resume Bagas"></i></a></li>
+        </ul>
+        <!-- /footer follow -->
+        <!-- footer copyright -->
+        <div class="footer-copyright">
+          <p>Copyright © 2020 - now. All Rights Reserved.
+          </p>
+        </div>
+        <!-- /footer copyright -->
+      </div>
+    </div>
+    <!-- /Row -->
+  </div>
+  <!-- /Container -->
+</footer>
+
+</html>
